@@ -1,0 +1,33 @@
+{
+  "name": "node-webrtcvad",
+  "version": "0.3.8",
+  "description": "nodejs interface to the WebRTC Voice Activity Detector",
+  "main": "dist/index.js",
+  "bin": {
+    "node-webrtcvad": "./dist/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node-gyp configure build && tsc",
+    "build:dev": "node-gyp -j 16 build --debug && tsc"
+  },
+  "types": "dist/index.d.ts",
+  "repository": "git+https://github.com/hydraslay/node-webrtcvad.git",
+  "author": "xukai <xukai@ai2-jp.com>",
+  "keywords": [
+    "vad",
+    "wave",
+    "webrtc",
+    "webrtcvad"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hydraslay/node-webrtcvad/issues"
+  },
+  "homepage": "https://github.com/hydraslay/node-webrtcvad#readme",
+  "dependencies": {
+    "@types/node": "^11.13.4",
+    "nan": "^2.14.2",
+    "wavefile": "^8.4.4"
+  }
+}
